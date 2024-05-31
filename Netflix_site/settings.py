@@ -74,46 +74,17 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Netflix_site.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'HOSTt':" ce0lkuo944ch99.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com",
-#         "Database":"davriuv6cl1ktl",
-#         "user":"ud2svudhnp9m9i",
-#         'NAME': 'postgres',
-#         "password":"p8b2f60271f6a98d04553c02096921f737c8448bd9d1a4e1a2e20f6833acfb14e",
-#         "URI":"postgres://ud2svudhnp9m9i:p8b2f60271f6a98d04553c02096921f737c8448bd9d1a4e1a2e20f6833acfb14e@ce0lkuo944ch99.cluster-czrs8kj4isg7.us-east-1",
-#
-#         'PORT': '5432',  # Default is '5432'
-#     }
-# }
-
-
-# DATABASES = {
-# #     'default': dj_database_url.config(default='postgres://localhost')
-# }
 DATABASES = {
     'default': {
-    'ENGINE': 'django.db.backends.postgresql',
-    'NAME': 'davriuv6cl1ktl',
-    'USER': 'ud2svudhnp9m9i',
-    'PASSWORD': 'p8b2f60271f6a98d04553c02096921f737c8448bd9d1a4e1a2e20f6833acfb14e',
-    'HOST': 'ce0lkuo944ch99.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
-    'PORT': '5432',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgres',
 
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
-
 }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
